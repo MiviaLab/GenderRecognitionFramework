@@ -2,7 +2,7 @@
 
 This repository contains the code for the paper *Gender recognition in the wild: a robustness evaluation over corrupted images - A. Greco, A. Saggese, M. Vento, V. Vigilante - Journal of Ambient Intelligence and Humanized Computing 2020*
 
-If you use this code in your research please cite this paper.
+If you use this code in your research, please cite this paper.
 
 
 Gender recognition framework provided by [MIVIA Lab](https://mivia.unisa.it), including training and evaluation code.
