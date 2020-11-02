@@ -1,0 +1,36 @@
+Results for: ../trained_paper/_netmobilenet96_datasetvggface2_gender_pretrainingimagenet_preprocessingvggface2_augmentationdefault_batch128_lr0.005_0.2_20_sel_gpu0_training-epochs70_weight_decay0.005_momentum_20200224_162941/checkpoint.61.hdf5
+../dataset/data/mivia-gender-normalized 0.891304
+
+
+Results for: ../trained_paper/_netsqueezenet_datasetvggface2_gender_pretrainingimagenet_preprocessingvggface2_augmentationdefault_batch128_lr0.005_0.2_20_sel_gpu0_training-epochs70_weight_decay0.005_momentum_20200224_162528/checkpoint.66.hdf5
+../dataset/data/mivia-gender-normalized 0.745718
+
+
+Results for: ../trained_paper/_netsenet50_datasetvggface2_gender_pretrainingimagenet_preprocessingvggface2_augmentationdefault_batch128_lr0.005_0.2_20_dataset_dirvggface2_data_2_sel_gpu0_training-epochs70_weight_decay0.005_momentum_20200224_142227/checkpoint.61.hdf5
+../dataset/data/mivia-gender-normalized 0.918314
+
+
+Results for: ../trained_paper/_netmobilenet224_datasetvggface2_gender_pretrainingimagenet_preprocessingvggface2_augmentationdefault_batch128_lr0.005_0.2_20_dataset_dirvggface2_data_2_sel_gpu2_training-epochs70_weight_decay0.005_momentum_20200224_171513/checkpoint.64.hdf5
+../dataset/data/mivia-gender-normalized 0.904480
+
+
+Results for: ../trained_paper/_netdensenet121bc_datasetvggface2_gender_pretrainingimagenet_preprocessingvggface2_augmentationdefault_batch128_lr0.005_0.2_20_dataset_dirvggface2_data_2_sel_gpu1_training-epochs70_weight_decay0.005_momentum_20200224_141936/checkpoint.62.hdf5
+../dataset/data/mivia-gender-normalized 0.897563
+
+
+Results for: ../trained_paper/_netmobilenet64_bio_datasetvggface2_gender_preprocessingvggface2_augmentationdefault_batch128_lr0.005_0.2_20_sel_gpu0_training-epochs70_weight_decay0.005_momentum_20200224_163440/checkpoint.64.hdf5
+../dataset/data/mivia-gender-normalized 0.848485
+
+
+Results for: ../trained_paper/_netvgg16_datasetvggface2_gender_pretrainingvggface2_preprocessingvggface2_augmentationdefault_batch512_lr0.005_0.2_20_dataset_dirvggface2_data_2_sel_gpu0,1,2_ngpus3_training-epochs70_weight_decay0.005_momentum_20200311_141623/checkpoint.54.hdf5
+../dataset/data/mivia-gender-normalized 0.953557
+
+
+Results for: ../trained_paper/_netshufflenet224_datasetvggface2_gender_pretrainingimagenet_preprocessingvggface2_augmentationdefault_batch128_lr0.005_0.2_20_sel_gpu1_training-epochs70_weight_decay0.005_momentum_20200224_161830/checkpoint.61.hdf5
+../dataset/data/mivia-gender-normalized 0.892622
+
+
+Results for: ../trained_paper/_netxception71_datasetvggface2_gender_pretrainingimagenet_preprocessingvggface2_augmentationdefault_batch128_lr0.005_0.2_20_dataset_dirvggface2_data_2_sel_gpu0_training-epochs70_weight_decay0.005_momentum_20200224_141139/checkpoint.36.hdf5
+../dataset/data/mivia-gender-normalized 0.819829
+
+

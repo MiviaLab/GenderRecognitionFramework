@@ -1,0 +1,2 @@
+	densenet121bc	mobilenet224	mobilenet64	mobilenet96	senet50	shufflenet224	squeezenet	vgg16	xception71	
+gender-feret	0.951271	0.942797	0.817797	0.936441	0.949153	0.942797	0.773305	0.936441	0.811441	

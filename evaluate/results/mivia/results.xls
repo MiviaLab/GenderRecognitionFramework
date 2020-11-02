@@ -1,0 +1,2 @@
+	densenet121bc	mobilenet224	mobilenet64	mobilenet96	senet50	shufflenet224	squeezenet	vgg16	xception71	
+mivia-gender-normalized	0.897563	0.90448	0.848485	0.891304	0.918314	0.892622	0.745718	0.953557	0.819829	

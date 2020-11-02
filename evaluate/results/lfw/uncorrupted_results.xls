@@ -1,0 +1,2 @@
+	densenet121bc	mobilenet224	mobilenet64	mobilenet96	senet50	shufflenet224	squeezenet	vgg16	xception71	
+lfw_cropped	0.984626	0.98364	0.966295	0.982852	0.989356	0.983345	0.947768	0.989159	0.95713	

@@ -1,0 +1,54 @@
+Dataset, run these commands from dataset directory in order to test them:
+	python3 vgg2_dataset_gender.py
+	python3 lfw_dataset_gender.py
+	python3 mivia_dataset_gender.py
+	python3 feret_dataset_gender.py
+	
+
+Export dataset augmented with corruptions, run these commands from dataset directory in order to export them:
+	python3 lfw_plus_aug_dataset.py exp
+	python3 feret_aug_dataset.py exp
+
+
+Training, from training directory: # available resume
+	python3 train.py --net squeezenet --dataset vggface2_gender --pretraining imagenet --preprocessing vggface2 --augmentation default --batch 128 --lr 0.005:0.2:20 --sel_gpu 0 --training-epochs 70 --weight_decay 0.005 --momentum
+	python3 train.py --net shufflenet224 --dataset vggface2_gender --pretraining imagenet --preprocessing vggface2 --augmentation default --batch 128 --lr 0.005:0.2:20 --sel_gpu 0 --training-epochs 70 --weight_decay 0.005 --momentum
+	python3 train.py --net mobilenet224 --dataset vggface2_gender --pretraining imagenet --preprocessing vggface2 --augmentation default --batch 128 --lr 0.005:0.2:20 --sel_gpu 0 --training-epochs 70 --weight_decay 0.005 --momentum
+	python3 train.py --net mobilenet96 --dataset vggface2_gender --pretraining imagenet --preprocessing vggface2 --augmentation default --batch 128 --lr 0.005:0.2:20  --sel_gpu 0 --training-epochs 70 --weight_decay 0.005 --momentum
+	python3 train.py --net mobilenet64_bio --dataset vggface2_gender --preprocessing vggface2 --augmentation default --batch 128 --lr 0.005:0.2:20 --sel_gpu 0 --training-epochs 70 --weight_decay 0.005 --momentum
+	python3 train.py --net xception71 --dataset vggface2_gender --pretraining imagenet --preprocessing vggface2 --augmentation default --batch 128 --lr 0.005:0.2:20 --sel_gpu 0 --training-epochs 70 --weight_decay 0.005 --momentum
+	python3 train.py --net senet50 --dataset vggface2_gender --pretraining imagenet --preprocessing vggface2 --augmentation default --batch 128 --lr 0.005:0.2:20 --sel_gpu 0 --training-epochs 70 --weight_decay 0.005 --momentum
+	python3 train.py --net densenet121bc --dataset vggface2_gender --pretraining imagenet --preprocessing vggface2 --augmentation default --batch 128 --lr 0.005:0.2:20 --sel_gpu 0 --training-epochs 70 --weight_decay 0.005 --momentum
+	python3 train.py --net vgg16 --dataset vggface2_gender --pretraining vggface2 --preprocessing vggface2 --augmentation default --batch 128 --lr 0.005:0.2:20 --sel_gpu 0 --training-epochs 70 --weight_decay 0.005 --momentum
+	python3 train.py --net vgg16 --dataset vggface2_gender --pretraining imagenet --preprocessing vggface2 --augmentation default --batch 128 --lr 0.005:0.2:20 --sel_gpu 0,1,2 --ngpus 3 --training-epochs 70 --weight_decay 0.005 --momentum
+	
+
+Evaluate, from evaluate directory:
+	VGGFACE:
+		python3 eval_uncorrupted_vggface2_gender.py --gpu 0 --path ../trained
+		python3 conv_txt_to_xls.py --input results/vggface2/results.txt
+		python3 tabulate_vggface2_gender_from_xls.py --uncorrupted results/vggface2/results.xls
+
+	LFW+:
+		python3 eval_corrupted_lfw_gender.py --gpu 0 --path ../trained
+		python3 eval_corrupted_lfw_gender.py --gpu 0 --path ../trained --nocorruption
+		python3 conv_txt_to_xls.py --input results/lfw/corrupted_results.txt
+		python3 conv_txt_to_xls.py --input results/lfw/uncorrupted_results.txt
+		python3 plot_and_tabulate_lfw_from_xls.py --corrupted results/lfw/corrupted_results.xls --uncorrupted results/lfw/uncorrupted_results.xls
+		python3 plot_combo_lfw_vggface2_from_xls.py --corrupted results/lfw/corrupted_results.xls --uncorrupted results/lfw/uncorrupted_results.xls
+
+	MIVIA:
+		python3 eval_uncorrupted_mivia_gender.py --gpu 0 --path ../trained
+		python3 conv_txt_to_xls.py --input results/mivia/results.txt 
+		python3 tabulate_mivia_gender_from_xls.py --uncorrupted results/mivia/results.xls
+
+	FERET:
+		python3 eval_corrupted_feret_gender.py --gpu 0 --path ../trained
+		python3 eval_corrupted_feret_gender.py --gpu 0 --path ../trained --nocorruption
+		python3 conv_txt_to_xls.py --input results/feret/corrupted_results.txt
+		python3 conv_txt_to_xls.py --input results/feret/uncorrupted_results.txt
+		python3 plot_and_tabulate_feret_from_xls.py --corrupted results/feret/corrupted_results.xls --uncorrupted results/feret/uncorrupted_results.xls
+		python3 plot_combo_feret_lfw_vggface2_from_xls.py --corrupted results/feret/corrupted_results.xls --uncorrupted results/feret/uncorrupted_results.xls
+
+In combo plotting scripts, data not read from .xls files (inserted as argument on command line) are stored as global variables in the scripts themselves.
+In the evaluation scripts (eval_ .py scripts), passing --time the .txt output files will have date and time in their name.
