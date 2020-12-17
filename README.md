@@ -29,6 +29,9 @@ tabulate==0.8.7
 tqdm==4.46.1
 ```
 
+You will also need to download all the data for the datasets that you intend to use and extract it in the /dataset/data directory.
+You will find the annotation for vggface2 which includes the detected regions with the faces [here](https://github.com/MiviaLab/GenderRecognitionFramework/releases/tag/0), you will need to downlad the images separately from the official website.
+
 ## Dataset
 The implemented _datasets_ are VGGFACE2, LFW+, MIVIA and FERET. <br>
 Run these commands from dataset directory in order to test them:
