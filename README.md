@@ -1,6 +1,6 @@
 # Gender recognition in the wild: a robustness evaluation over corrupted images
 
-This repository contains the code for the paper *Gender recognition in the wild: a robustness evaluation over corrupted images - A. Greco, A. Saggese, M. Vento, V. Vigilante - Journal of Ambient Intelligence and Humanized Computing 2020*
+This repository contains the code for the paper [*Gender recognition in the wild: a robustness evaluation over corrupted images - A. Greco, A. Saggese, M. Vento, V. Vigilante - Journal of Ambient Intelligence and Humanized Computing 2020*](https://link.springer.com/article/10.1007/s12652-020-02750-0)
 
 If you use this code in your research, please cite this paper.
 
